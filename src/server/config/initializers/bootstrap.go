@@ -5,6 +5,6 @@ package initializers
 func Init(debug bool) {
 	// Connect to & Migrate the database
 	InitDB(debug)
-  
-  go UpdateScoreLoop()
+
+	go UpdateScoreLoop()
 }

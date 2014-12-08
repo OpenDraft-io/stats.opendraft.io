@@ -1,8 +1,8 @@
 package initializers
 
 import (
-  "./../../app/models"
-  "time"
+	"./../../app/models"
+	"time"
 )
 
 //
@@ -11,8 +11,8 @@ import (
 // Run this concurrently, otherwise you're going to block everything up
 
 func UpdateScoreLoop() {
-  for ;; {
-    models.UpdateAllArticleScores()
-    time.Sleep(60 *  time.Second)
-  }
+	for {
+		models.UpdateAllArticleScores()
+		time.Sleep(60 * time.Second)
+	}
 }
